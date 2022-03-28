@@ -23,7 +23,7 @@ for (let i = 0;i < arr.length; i++){
 int();
 
 
-4-
+4-//добавить счетчик и делить на него
 function mean() {
             let sum = 0;
 
