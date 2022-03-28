@@ -26,13 +26,14 @@ int();
 4-//добавить счетчик и делить на него
 function mean() {
             let sum = 0;
-
+let two = 0
             for (let i = 0; i < arguments[i]; i++ ){
                 if(typeof arguments[i] == 'number'){
                 
-                sum = sum + arguments[i];}
+                sum = sum + arguments[i]
+                two += 1    ;}
 }
-            return sum == 0 ? sum : sum / arguments.length;
+            return sum == 0 ? sum : sum / two;
         }
 
-        console.log( mean( 1, 2, 3,'sdfsd') );
+        console.log( mean( 1, 2, 3, 4) );
