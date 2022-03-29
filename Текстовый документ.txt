@@ -2,7 +2,7 @@
 let str
 function stringFrom(){
     for (let i = 0; i < arguments.length; i++){
-       str = arguments[i]
+       str += arguments[i]
     }
     return str
 }
@@ -10,6 +10,35 @@ console.log (stringFrom(132,true,'world','gufu'))
 
 
 2-
+//выборка максимального значения
+
+let saveMax = 0
+function maximum(){
+for(let i=0 ; i<arguments.length ; i++){
+    if(saveMax < arguments[i]){
+        saveMax = arguments[i];
+    }
+}
+    return saveMax
+}
+
+console.log (maximum(1,22,3,7,5,6,5))
+
+//мин значение
+
+let saveMin
+function minimum(){
+for(let i=0 ; i<arguments.length ; i++){
+    if(saveMin < arguments[i]){
+    }
+    else{
+        saveMin=arguments[i]
+    }
+}
+    return saveMin
+}
+
+console.log (minimum(22,3,7,21,23,5))
 
 
 3-
