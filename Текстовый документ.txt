@@ -1,9 +1,12 @@
-1-
-function stringFrom(a,b,c){
-    str = `${a} ${b} ${c}`
+1-?
+let str
+function stringFrom(){
+    for (let i = 0; i < arguments.length; i++){
+       str = arguments[i]
+    }
     return str
 }
-stringFrom(132,true,'world')
+console.log (stringFrom(132,true,'world','gufu'))
 
 
 2-
