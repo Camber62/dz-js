@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td><button class="firstname_btn">Firstname</button></td>
+        <td><button class="lastname_btn">Lastname</button></td>
+        <td><button class="age_btn">Age</button></td>
+        <td><button class="company_btn">Company</button></td>
+    </tr>
+
+
+    <tr>
+        <td class="firstname">Mark</td>
+        <td class="lastname">Zuckerberg</td>
+        <td class="age">34</td>
+        <td class="company">Fafebook</td>
+    </tr>
+    <tr>
+        <td class="firstname">Larry</td>
+        <td class="lastname">Page</td>
+        <td class="age">45</td>
+        <td class="company">Google</td>
+    </tr>
+    <tr>
+        <td class="firstname">Timothy</td>
+        <td class="lastname">Cook</td>
+        <td class="age">57</td>
+        <td class="company">Apple</td>
+    </tr>
+    <tr>
+        <td class="firstname">Bill</td>
+        <td class="lastname">Gates</td>
+        <td class="age">62</td>
+        <td class="company">Microsoft</td>
+    </tr>
+
+
+
+</table>
+<script src="js.js"></script>
+</body>
+</html>
+// кнопки
+const firstname_btn = document.querySelector('.firstname_btn')
+const lastname_btn = document.querySelector('.lastname_btn')
+const age_btn = document.querySelector('.age_btn')
+const company_btn = document.querySelector('.company_btn')
+// данные
+const age = document.querySelectorAll('.age')
+const firstname = document.querySelectorAll('.firstname')
+const lastname = document.querySelectorAll('.lastname')
+const company = document.querySelectorAll('.company')
+
+
+firstname_btn.addEventListener('click' ,function(event){
+
+
+    console.log(firstname.sort())
+});
+
+button{
+    border: none;
+    background:none;
+    width: 100%;
+    height: 100%;
+}
+table{
+    border: 1px solid black;
+    background: #f3d8c6;
+    padding: 10px;
+    width: 700px;
+    height: auto;
+}
+td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
